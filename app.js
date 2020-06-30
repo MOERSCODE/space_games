@@ -38,18 +38,6 @@
 // This is the beginning of the Space_games javaScript code
 // use "result" as user input
 
-// Inputting the math.random function
-function randomInt(Max) {
-    return Math.floor(Math.random() * Math.floor(max));
-  }
-
-  console.log(randomInt(2));
-  // the integer out put is output: 0, 1
-  
-  console.log(Math.random());
-  // the integer out put is between between 0 and 1
-
-  
 
 console.log("Welcome to the very first Space Game V.1 COPYRIGHT 2020!!!")
 
@@ -86,8 +74,22 @@ if (response === "a" || response === undefined ||response === null) {
         terminateGame(); //This will end the game
     }
 
-    if (response === "c"
-}
-}
+    if (response === "c"){
+        
+    }
+
+// Inputting the math.random function
+function randomInt(Max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  console.log(randomInt(2));
+  // the integer out put is output: 0, 1
+  
+  console.log(Math.random());
+  // the integer out put is between between 0 and 1
+
+{
+
 
 
