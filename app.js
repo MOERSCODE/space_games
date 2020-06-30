@@ -41,7 +41,7 @@
 
 console.log("Welcome to the very first Space Game V.1 COPYRIGHT 2020!!!")
 
-var enemyShip = newShip (enemyShipName[enemyName()], enemyShip, enemyFp, enemyACC)
+var enemyShip = newShip (enemyShipName[enemyName()], enemyShip)
 
 // "Decision" allows you to choose to strike or to retreat. 
 
@@ -60,22 +60,24 @@ yourJourneyContinues();
 const yourJourneyContinues = () => {}
 
 while (repsonse === "b"){
-    ussSchwartzenegger.battle(enemyShip,  ussSchwartzenegger);
+    ussSchwartzenegger.battle(enemyShip,ussSchwartzenegger);
 
-    if (playerlose === true){ enemyShip.battle(ussSchwartzenegger, enemyShip);
+    if (playerlose === true){enemyShip.battle(ussSchwartzenegger, enemyShip);
     }
 }
 if (response === "a" || response === undefined ||response === null) {
 
-    let end = prompt(`Is hiding your final answer? How can you honestly call yourself a warrior?`);
+    let end = prompt(`Is hiding your final [a]nswer? How can you honestly call yourself a warrior?`);
 
     if (end === true){
 
         terminateGame(); //This will end the game
-    }
+    } else {
+        console.log("keep going space captin");  // returns message
+    } 
 
-    if (response === "c"){
-        
+    if (response === "q"){
+
     }
 
 // Inputting the math.random function
